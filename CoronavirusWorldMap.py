@@ -1,7 +1,7 @@
 import folium
 import pandas as pd
 
-veri = pd.read_excel("world_coronavirus_cases.xlsx")
+veri = pd.read_excel("coronavirus_cases_world.xlsx")
 
 enlemler = list(veri["Enlem"])
 boylamlar = list(veri["Boylam"])
@@ -152,5 +152,5 @@ world_map.add_child(test_orani_haritasi)
 world_map.add_child(folium.LayerControl())
 
 
-world_map.save("koronavirüs_dünya_haritası.html")
+world_map.save("world_map.html")
 

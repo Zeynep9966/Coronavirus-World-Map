@@ -5,7 +5,7 @@ import xlrd
 
 map = folium.Map(location=[41,29],tiles="CartoDB positron")
 
-veri = pd.read_excel("tr-cities.xlsx")
+veri = pd.read_excel("cities-in-Turkey.xlsx")
 
 
 ilceler = list(veri["City"])
